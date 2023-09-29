@@ -1,0 +1,22 @@
+// Laboratório de Estrutura de Dados
+// Exercícios Práticos - Número 13
+
+// Projeto do dia: Criando uma árvore binária que armazene caracteres, mas implemente funções recursivas 
+// Aqui se encontra a função Driver.Cpp do código
+
+#include "BinaryTree.h"
+#include <iostream>
+
+using namespace std;
+
+Int main() {
+
+BinaryTree t;
+t.PreOrder();
+cout << endl;
+t.InOrder();
+cout << endl;
+t.PostOrder();
+cout << endl;
+
+};

@@ -1,0 +1,47 @@
+// Correção da atividade 15.cpp
+int BinarySearchTree::Sum(){
+    return Sum(root);
+}
+
+int BinarySearchTree::Sum(TreePointer t){
+    if (t == NULL) return 0;
+                   return t->Entry + Sum(t->LeftNode) + Sum(t->RightNode);
+}
+
+void BinarySearchTree::Pai(int x){
+     TreePointer p;
+
+     Pai (x, p);
+     if(p == ) cout << "O no nao possui pai" << endl;
+     else cout << p->Entry << endl;
+}
+
+void BinarySearchTree::Pai(int x, TreePointer &p){
+    TreePointer q = root;
+    p = NULL
+
+    while (q! = NULL && q->Entry !=x){
+        p = q;
+        if (x < q->entry){
+            q = q -> LeftNode;
+        }else{
+            q = q->RightNode;
+        }
+  
+    }
+    if ( q == NULL) p = NULL;
+}
+
+/// driver.cpp
+
+#include "BinarySearchTree.h"
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    BinarySearchTree t;
+    t.Print();
+    cout << '\n';
+    cout << t.Sum << endl;
+}
